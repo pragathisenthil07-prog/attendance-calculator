@@ -1,0 +1,17 @@
+# Student Attendance Calculator
+
+name = input("Enter student name: ")
+total_classes = int(input("Total number of classes: "))
+attended = int(input("Number of classes attended: "))
+
+percentage = (attended / total_classes) * 100
+
+if percentage >= 75:
+    status = "Eligible for exams"
+else:
+    status = "Attendance shortage"
+
+print(f"\nStudent: {name}")
+print(f"Classes attended: {attended}/{total_classes}")
+print(f"Attendance: {percentage:.2f}%")
+print(f"Status: {status}")
